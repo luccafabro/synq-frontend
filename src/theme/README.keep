@@ -1,0 +1,48 @@
+import type {
+  CreateFrequencyDto,
+  CreateMessageDto,
+  CreateMembershipDto,
+  CreateUserDto,
+  FrequencyDto,
+  MembershipDto,
+  MessageDto,
+  PaginationDTO,
+  ResponseDTO,
+  RoleDto,
+  UpdateFrequencyDto,
+  UpdateUserDto,
+  UserDto,
+} from "@/lib/types";
+import {
+  createFrequencySchema,
+  createMembershipSchema,
+  createMessageSchema,
+  createUserSchema,
+  updateFrequencySchema,
+  updateUserSchema,
+} from "@/lib/validation";
+
+export type {
+  UserDto,
+  FrequencyDto,
+  MessageDto,
+  MembershipDto,
+  PaginationDTO,
+  RoleDto,
+  ResponseDTO,
+  CreateUserDto,
+  UpdateUserDto,
+  CreateFrequencyDto,
+  UpdateFrequencyDto,
+  CreateMessageDto,
+  CreateMembershipDto,
+};
+
+export const schemas = {
+  createUser: createUserSchema,
+  updateUser: updateUserSchema,
+  createFrequency: createFrequencySchema,
+  updateFrequency: updateFrequencySchema,
+  createMessage: createMessageSchema,
+  createMembership: createMembershipSchema,
+};
